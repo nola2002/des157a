@@ -1,71 +1,76 @@
 /* reset */
 *{
-    box-sizing: border-box;
+   box-sizing: border-box;
 }
 ul, ol{
-    list-style-type: none;
+   list-style-type: none;
 }
 li a{
-    text-decoration-line: none;
+   text-decoration-line: none;
 }
 img{
-    display: block;
-    max-width: 100%;
-    height:auto;
+   display: block;
+   max-width: 100%;
+   height:auto;
 }
 h1, h2, h3, p, ul, ol{
-    margin: 0;
-    padding: 0;
+   margin: 0;
+   padding: 0;
 }
+
 
 /* custom cursor */
 
+
 main{
-  background-color: antiquewhite;
+ background-color: antiquewhite;
 }
 h2{
-  height: 42px;
-  width: 200px;
-  border: 1px solid antiquewhite;
-  border-radius: 10px;
-  color: antiquewhite;
-  font-family: "Sorts Mill Goudy", serif;
-  font-weight: 400;
-  font-size: 2em;
-  font-style: normal;
-  padding: 5px;
-  margin: 10px;
-  text-align: center;
+ height: 42px;
+ width: 200px;
+ border: 1px solid antiquewhite;
+ border-radius: 10px;
+ color: antiquewhite;
+ font-family: "Sorts Mill Goudy", serif;
+ font-weight: 400;
+ font-size: 2em;
+ font-style: normal;
+ padding: 5px;
+ margin: 10px;
+ text-align: center;
 }
 
+
 header{
- display: flex; 
- align-items: center;
+display: flex;
+align-items: center;
 }
 #banner{
-    display: flex;
-    width: 100%;
-    max-width: 1100;
-    align-content: center;
-    height: 200px;
-    background-color: antiquewhite;
-    text-align: center;
+   display: flex;
+   width: 100%;
+   max-width: 1100;
+   align-content: center;
+   height: 200px;
+   background-color: antiquewhite;
+   text-align: center;
 }
 #banner p{
-  font-family: "Sorts Mill Goudy", serif;
-  min-width: 650px;
-  color: #7844d3;
-  font-weight: 500;
-  font-size: 2.2em;
-  font-style: normal;
-  text-align: left;
+ font-family: "Sorts Mill Goudy", serif;
+ min-width: 650px;
+ color: #7844d3;
+ font-weight: 500;
+ font-size: 2.2em;
+ font-style: normal;
+ text-align: left;
 }
 #banner img{
 
-  width: calc(24%);
-  max-width: 245px;
-  /* padding: 10px; */
+
+ width: calc(24%);
+ max-width: 245px;
+ /* padding: 10px; */
 }
+
 
 /* banner word rotation */
 #banner header #fillword h1{
@@ -82,30 +87,34 @@ top: 20px;
 /* left: 20px; */
 }
 
+
 #fillword {
-  position: relative;
+ position: relative;
 }
 
+
 #wordone {
-  position: relative;
-  top: -30px;
-  opacity: 1;
-  animation: moveWordone 2.5s ease forwards;
+ position: relative;
+ top: -30px;
+ opacity: 1;
+ animation: moveWordone 7.5s ease forwards;
 }
 #wordtwo {
-  position: relative;
-  top: -90px;
-  opacity: 1;
-  animation: moveWordtwo 2.5s ease forwards;
+ position: relative;
+ top: -90px;
+ opacity: 1;
+ animation: moveWordtwo 4.5s ease forwards;
 }
+
+
 
 
 /* boxes */
 main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* gap: 20px; */
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   /* gap: 20px; */
 }
 #box1{
 display: flex;
@@ -115,91 +124,181 @@ height: 250px;
 background-color: #f16316;
 }
 #box1 img{
-    border-radius: 10%;
-    border: 1px solid antiquewhite;
-    margin: 10px;
+   border-radius: 10%;
+   border: 1px solid antiquewhite;
+   margin: 10px;
 }
 #box2{
-  display: flex;
-    width: calc(50%);
-    min-width: 525px;
-    height: 250px;
-    background-color: #276144;
+ display: flex;
+   width: calc(50%);
+   min-width: 525px;
+   height: 250px;
+   background-color: #276144;
 }
 #box2 img{
-  border-radius: 10%;
-  border: 1px solid antiquewhite;
-  margin: 10px;
+ border-radius: 10%;
+ border: 1px solid antiquewhite;
+ margin: 10px;
 }
 #box3{
-  display: flex;
-  width: calc(50%);
-  min-width: 525px;
-  height: 250px;
-  background-color: #1d50b7; 
+ display: flex;
+ width: calc(50%);
+ min-width: 525px;
+ height: 250px;
+ background-color: #1d50b7;
 }
 #box3 img{
-  border-radius: 10%;
-  border: 1px solid antiquewhite;
-  margin: 10px;
+ border-radius: 10%;
+ border: 1px solid antiquewhite;
+ margin: 10px;
 }
 #box4{
-  display: flex;
-  width: calc(50%);
-  min-width: 5px;
-  height: 250px;
-  background-color: #c94242; 
+ display: flex;
+ width: calc(50%);
+ min-width: 5px;
+ height: 250px;
+ background-color: #c94242;
 }
 #box4 img{
-  border-radius: 10%;
-  border: 1px solid antiquewhite;
-  margin: 10px;
+ border-radius: 10%;
+ border: 1px solid antiquewhite;
+ margin: 10px;
 }
+
+
 
 
 /* nav options italicize on hover */
 .submenu li {
-    font-style: normal; 
-    transition: font-style 100ms ease-in-out; 
-    /* padding-left: 10px; */
-    margin: 10px;
-    padding-left: 10px;
+   font-style: normal;
+   transition: font-style 100ms ease-in-out;
+   /* padding-left: 10px; */
+   margin: 10px;
+   padding-left: 10px;
 }
 .submenu li:hover {
-    font-style: italic; 
+   font-style: italic;
 }
 
+
 .submenu li a{
-  color: antiquewhite;
-  font-family: "Sorts Mill Goudy", serif;
-  font-weight: 400;
-  font-size: 1.1em;
+ color: antiquewhite;
+ font-family: "Sorts Mill Goudy", serif;
+ font-weight: 400;
+ font-size: 1.1em;
 }
+
+
 
 
 /* sliding footer message */
 footer {
-    background-color: #f1b316;
-    width: 100%;
-    height: 55px;
-    color: rgb(250, 236, 221);
-    font-family: "Sorts Mill Goudy", serif;
-    text-align: center;
-    text-transform: uppercase;
-    overflow-x: hidden;
-    position: fixed;
-    bottom: 0;
-    padding-top: 4px;
-  }
-  footer #email{
-    /* display: none; */
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 55px;
-    
-  }
-  footer #email a{
-    color: rgb(250, 236, 221);
-    text-decoration-line: none;
-    text-
+   background-color: #f1b316;
+   width: 100%;
+   height: 55px;
+   color: rgb(250, 236, 221);
+   font-family: "Sorts Mill Goudy", serif;
+   text-align: center;
+   text-transform: uppercase;
+   overflow-x: hidden;
+   position: fixed;
+   bottom: 0;
+   padding-top: 4px;
+ }
+ footer #email{
+   /* display: none; */
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   height: 55px;
+  
+ }
+ footer #email a{
+   color: rgb(250, 236, 221);
+   text-decoration-line: none;
+   text-align: center;
+   font-size: 1.5em;
+   padding-top: 12px ;
+
+
+ }
+ footer #message {
+   display: flex;
+   flex-wrap: nowrap;
+   white-space: nowrap;
+   min-width: 100%;
+ }
+ footer #message .madeby {
+   display: flex;
+   flex-shrink: 0;
+   height: 55px;
+   align-items: center;
+   animation: slide-left 20s linear infinite;
+ }
+ footer #message .madeby p {
+   font-size: 2.0em;
+   font-weight: 100;
+   padding-left: 0.5em;
+ }
+ @keyframes slide-left {
+   from {
+     -webkit-transform: translateX(0);
+     transform: translateX(0);
+   }
+   to {
+     -webkit-transform: translateX(-100%);
+     transform: translateX(-100%);
+   }
+ }
+ /* footer flips to show email on hover*/
+footer:hover #message {
+ display: none;
+}
+footer:hover #email{
+ display: flex;
+ text-decoration-line: none;
+ font-family: "Sorts Mill Goudy", serif;
+ color: rgb(250, 236, 221);
+}
+
+
+
+
+/* word rotaion animation */
+@keyframes moveWordone {
+ 0% {
+     top: -30px;
+     opacity: 0;
+ }
+ 40% {
+     top: 0;
+     opacity: 1;
+ }
+ 60% {
+     top: 0;
+     opacity: 1;
+ }
+ 100% {
+     top: 60px;
+     opacity: 0;
+ }
+}
+@keyframes moveWordtwo {
+ 0% {
+     top: -90px;
+     opacity: 0;
+ }
+ 40% {
+     top: 0;
+     opacity: 1;
+ }
+ 60% {
+     top: 0;
+     opacity: 1;
+ }
+ 100% {
+     top: 60px;
+     opacity: 0;
+ }
+}
+
