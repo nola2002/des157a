@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation 2</title>
+</head>
+<body>
+    <h1>JS Experimentation 2</h1>
+
+    <script>
+        // pick 
+        function pickColor() {
+            var color = prompt("Pick a color: red, pink, green, yellow, purple, orange, or blue", "");
+       
+            if (color === "red" || color === "pink" || color === "green" || color === "yellow" || color === "purple" || color === "orange" || color === "blue"){
+                document.body.style.backgroundColor = color;
+            } else {
+                alert("Please pick a valid color: red, green, or blue");
+            }
+        }
+        pickColor();
+
+      </script>
+
+</body>
+</html>
