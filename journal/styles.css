@@ -10,8 +10,16 @@ div{
 h1{
     text-align: center;
     font-family: "Sorts Mill Goudy", serif;
+    color: #7844d3;
  
 }
+h2{
+    margin-top: 2em;
+    text-align: center;
+    font-family: "Sorts Mill Goudy", serif;
+    color: #7844d3;
+}
+
 p{
 
     display: block;
@@ -20,6 +28,7 @@ p{
     justify-content: center;
     align-items: center;
     width: 50%;
+    color: #f16316;
 }
 a{
     font-family: "Sorts Mill Goudy", serif;
