@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadLibs</title>
+    <script src="script.js" defer></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+    <link href="styles.css" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+        <section id="opening-page">
+            <article>
+                <h1>Hurry!</h1>
+                <h1>It's Your Pass Time!!</h1>
+                <h1>Right Now!!!</h1>
+                <button id="gotoquestions">Start!</button>
+            </article>
+        </section>
+
+
+        <section id="form-page" class="hidden">
+            <article id="instructions">
+                <h3>UC Davis Schedule Builder</h3>
+                <p>It's time to build your schedule for next quarter.</p>
+                <p>Complete the following questions and click REGISTER.</p>
+                <img src="images/madlibs.png" alt="davis mock logo">
+            </article>
+
+            <article id="madlib-questions">
+                <h2>Questions</h2>
+                    <form>
+                        <label for="name">Your Name:</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="Animal">Animal:</label>
+                        <input type="text" name="Animal" id="Animal" required>
+                        <label for="verb">Verb Ending in "ing":</label>
+                        <input type="text" name="verb" id="verb" required>
+                        <label for="adjective">Adjective:</label>
+                        <input type="text" name="adjective" id="adjective" required>
+                        <label for="alcohol">Alcoholic Beverage:</label>
+                        <input type="text" name="alcohol" id="alcohol" required>
+                        <input type="submit" value="REGISTER" id="gotomadlib">
+                    </form>
+            </article> 
+        </section>
+
+
+        <section id="madlib-results" class="hidden">
+            <article class="top">
+                <h1><span id="nameInsert"></span>'s Schedule: Spring 2029<h1>
+                <p>Print</p>
+                <p>Finals</p>
+                <p>Calendar</p>
+            </article>
+            
+                    <article class="course">
+                        <div class="left">
+                            <h2>Intro to <span id="animalInsert"></span> Reproduction</h2>
+                            <h3>Prof. Elizabeth Horse</h3>
+                            <h4>MW   6:10-7:30 AM</h4>
+                            <h5>Sheep Hall</h5>
+                        </div>
+                        <div class="right">
+                            <h4>Units: 2</h4>
+                            <div class="button">
+                                <div class="not"><button>Not Registered</button></div>
+                                <button>Registered</button>
+                            </div>
+                            <h4>Class Capacity: 100  Available Seats: 0  Waitlist: 97</h4>
+                        </div>
+                    </article>
+
+                    <article class="course">
+                        <div class="left">
+                            <h2>Bio-technical Applied <span id="foodInsert"></span> Engineering</h2>
+                            <h3>Prof. Sam Carrot</h3>
+                            <h4>TTH   2:30-8:00 PM</h4>
+                            <h5>Brek Fast Building</h5>
+                        </div>
+                        <div class="right">
+                            <h4>Units: 16</h4>
+                            <div class="button">
+                                <div class="not"><button>Not Registered</button></div>
+                                <button>Registered</button>
+                            </div>
+                            <h4>Class Capacity: 15  Available Seats: 4  Waitlist: 0</h4>
+                        </div>
+                    </article>
+
+                    <article class="course">
+                        <div class="left">
+                            <h2>Cow <span id="verbInsert"></span> 101</h2>
+                            <h3>Prof. Mike Heifer</h3>
+                            <h4>TTH   1:10-1:30 PM</h4>
+                            <h5>Big Farm Auditorium</h5>
+                        </div>
+                        <div class="right">
+                            <h4>Units: 1</h4>
+                            <div class="button">
+                                <div class="not"><button>Not Registered</button></div>
+                                <button>Registered</button>
+                            </div>
+                            <h4>Class Capacity: 27  Available Seats: 0  Waitlist: 15</h4>
+                        </div>
+                    </article>
+                
+                    <article class="course">
+                        <div class="left">
+                            <h2>Designing for a <span id="adjInsert"></span> World</h2>
+                            <h3>Prof. Glenda Drew</h3>
+                            <h4>MW   6:30-8:50 PM</h4>
+                            <h5>Student Community Center</h5>
+                        </div>
+                        <div class="right">
+                            <h4>Units: 5</h4>
+                            <div class="button">
+                                <div class="not"><button>Not Registered</button></div>
+                                <button>Registered</button>
+                            </div>
+                            <h4>Class Capacity: 30  Available Seats: 0  Waitlist: 52</h4>
+                        </div>
+                    </article>
+
+                    <article class="course">
+                        <div class="left">
+                            <h2>Lab for <span id="alcoholInsert"></span> Consumption</h2>
+                            <h3>Prof. Peter Noir</h3>
+                            <h4>F   10:15-11:50 PM</h4>
+                            <h5>Bull n' Mouth</h5>
+                        </div>
+                        <div class="right">
+                            <h4>Units: 9</h4>
+                            <div class="button">
+                                <div class="not"><button>Not Registered</button></div>
+                                <button>Registered</button>
+                            </div>
+                            <h4>Class Capacity: 379  Available Seats: 16  Waitlist: 0</h4>
+                        </div>
+                    </article>    
+        </section>
+
+
+
+    </main>
+</body>
+</html>
