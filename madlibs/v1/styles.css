@@ -27,8 +27,8 @@ display: none;
 
 
 #form-page{
-    display: none;
-    /* display: flex; */
+    /* display: none; */
+    display: flex;
     margin: auto;
     box-sizing: border-box;
     
@@ -74,14 +74,19 @@ form input {
     border-style: none;
     border-radius: 5px;
 }
+
+
+
 .madlib-results{
-    /* display: flex; */
+    /* display: none;  */
+    display: flex;
     margin: auto;
     
 }
 .top{
     background-color: #81B4EE;
     display: flex;
+    /* flex-direction: column; */
     justify-content:space-between;
     padding-left: 1em;
     padding-right: 1em;

@@ -15,6 +15,10 @@ h2,h3{
     font-family: "Sorts Mill Goudy", serif;
     color: #7844d3;
 }
+h2 a{
+    text-align: left;
+    padding-left: 2em;
+}
 h4{
     /* margin: 4em;  */
     text-align: center;
@@ -38,10 +42,12 @@ a{
     text-align: center;
     text-decoration-line: none;
 }
-img{
-
+div img{
     text-align: center;
-/* margin: auto; */
+    margin: auto;
+    display: block;
+    padding: 1em;
+    
 /* text-align: center; */
 /* margin-left: 250px; */
 }

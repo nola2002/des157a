@@ -14,136 +14,137 @@
     <link href="styles.css" rel="stylesheet"> 
 </head>
 <body>
-    <div id="opening-page">
-        <h1>Hurry!</h1>
-        <h1>It's Your Pass Time!!</h1>
-        <h1>Right Now!!!</h1>
-        <button>Register</button>
-    </div>
-
-
-    <div id="form-page">
-        <section id="instructions">
-            <h3>UC Davis Schedule Builder</h3>
-            <p>It's time to build your schedule for next quarter.</p>
-            <p>Complete the following questions and click REGISTER.</p>
-            <img src="images/davislogo.jpg" alt="davis mock logo">
+    <main>
+        <section id="opening-page" class="showing cyan">
+            <h1>Hurry!</h1>
+            <h1>It's Your Pass Time!!</h1>
+            <h1>Right Now!!!</h1>
+            <button id="gotoinput1">Start!</button>
         </section>
 
-        <section id="madlib-questions">
-            <h2>Questions</h2>
-                <form>
-                    <label for="name">Your Name:</label>
-                    <input type="text" name="name" id="name" required>
-                    <label for="Animal">Animal:</label>
-                    <input type="text" name="Animal" id="Animal" required>
-                    <label for="verb">Verb Ending in "ing":</label>
-                    <input type="text" name="verb" id="verb" required>
-                    <label for="adjective">Adjective:</label>
-                    <input type="text" name="adjective" id="adjective" required>
-                    <label for="alcohol">Alcoholic Beverage:</label>
-                    <input type="text" name="alcohol" id="alcohol" required>
-                    <button type="submit">REGISTER</button>
-                </form>
-        </section> 
-    </div>
 
+        <div id="form-page" class="hidden">
+            <section id="instructions">
+                <h3>UC Davis Schedule Builder</h3>
+                <p>It's time to build your schedule for next quarter.</p>
+                <p>Complete the following questions and click REGISTER.</p>
+                <img src="images/madlibs.png" alt="davis mock logo">
+            </section>
 
-    <div id="madlib-results">
-        <div class="top">
-        <h1><span>(Name)</span>'s Schedule: Spring 2029</h1>
-            <p>Print</p>
-            <p>Finals</p>
-            <p>Calendar</p>
+            <section id="madlib-questions">
+                <h2>Questions</h2>
+                    <form>
+                        <label for="name">Your Name:</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="Animal">Animal:</label>
+                        <input type="text" name="Animal" id="Animal" required>
+                        <label for="verb">Verb Ending in "ing":</label>
+                        <input type="text" name="verb" id="verb" required>
+                        <label for="adjective">Adjective:</label>
+                        <input type="text" name="adjective" id="adjective" required>
+                        <label for="alcohol">Alcoholic Beverage:</label>
+                        <input type="text" name="alcohol" id="alcohol" required>
+                        <button type="submit">REGISTER</button>
+                    </form>
+            </section> 
         </div>
-                <div class="course">
-                    <section class="left">
-                        <h2>Intro to <span>(Animal)</span> Reproduction</h2>
-                        <h3>Prof. Elizabeth Horse</h3>
-                        <h4>MW   6:10-7:30 AM</h4>
-                        <h5>Sheep Hall</h5>
-                    </section>
-                    <section class="right">
-                        <h4>Units: 2</h4>
-                        <div class="button">
-                            <div class="not"><button>Not Registered</button></div>
-                            <button>Registered</button>
-                        </div>
-                        <h4>Class Capacity: 100  Available Seats: 0  Waitlist: 97</h4>
-                    </section>
-                </div>
-
-                <div class="course">
-                    <section class="left">
-                        <h2>Bio-technical Applied <span>(food)</span> Engineering</h2>
-                        <h3>Prof. Sam Carrot</h3>
-                        <h4>TTH   2:30-8:00 PM</h4>
-                        <h5>Brek Fast Building</h5>
-                    </section>
-                    <section class="right">
-                        <h4>Units: 16</h4>
-                        <div class="button">
-                            <div class="not"><button>Not Registered</button></div>
-                            <button>Registered</button>
-                        </div>
-                        <h4>Class Capacity: 15  Available Seats: 4  Waitlist: 0</h4>
-                    </section>
-                </div>
-
-                <div class="course">
-                    <section class="left">
-                        <h2>Cow <span>(Verb ending in "ing")</span> 101</h2>
-                        <h3>Prof. Mike Heifer</h3>
-                        <h4>TTH   1:10-1:30 PM</h4>
-                        <h5>Big Farm Auditorium</h5>
-                    </section>
-                    <section class="right">
-                        <h4>Units: 1</h4>
-                        <div class="button">
-                            <div class="not"><button>Not Registered</button></div>
-                            <button>Registered</button>
-                        </div>
-                        <h4>Class Capacity: 27  Available Seats: 0  Waitlist: 15</h4>
-                    </section>
-                </div>
-            
-                <div class="course">
-                    <section class="left">
-                        <h2>Designing for a <span>(Adjective)</span> World</h2>
-                        <h3>Prof. Glenda Drew</h3>
-                        <h4>MW   6:30-8:50 PM</h4>
-                        <h5>Student Community Center</h5>
-                    </section>
-                    <section class="right">
-                        <h4>Units: 5</h4>
-                        <div class="button">
-                            <div class="not"><button>Not Registered</button></div>
-                            <button>Registered</button>
-                        </div>
-                        <h4>Class Capacity: 30  Available Seats: 0  Waitlist: 52</h4>
-                    </section>
-                </div>
-
-                <div class="course">
-                    <section class="left">
-                        <h2>Lab for <span>(Alcoholic Beverage)</span> Consumption</h2>
-                        <h3>Prof. Peter Noir</h3>
-                        <h4>F   10:15-11:50 PM</h4>
-                        <h5>Bull n' Mouth</h5>
-                    </section>
-                    <section class="right">
-                        <h4>Units: 9</h4>
-                        <div class="button">
-                            <div class="not"><button>Not Registered</button></div>
-                            <button>Registered</button>
-                        </div>
-                        <h4>Class Capacity: 379  Available Seats: 16  Waitlist: 0</h4>
-                    </section>
-                </div>    
-    </div>
 
 
+        <div id="madlib-results" class="hidden">
+            <div class="top">
+                <h1><span id="nameInsert">(Name)</span>'s Schedule: Spring 2029<h1>
+                <p>Print</p>
+                <p>Finals</p>
+                <p>Calendar</p>
+            </div>
+                    <div class="course">
+                        <section class="left">
+                            <h2>Intro to <span>(Animal)</span> Reproduction</h2>
+                            <h3>Prof. Elizabeth Horse</h3>
+                            <h4>MW   6:10-7:30 AM</h4>
+                            <h5>Sheep Hall</h5>
+                        </section>
+                        <section class="right">
+                            <h4>Units: 2</h4>
+                            <div class="button">
+                                <div class="not"><button>Not Registered</button></div>
+                                <button>Registered</button>
+                            </div>
+                            <h4>Class Capacity: 100  Available Seats: 0  Waitlist: 97</h4>
+                        </section>
+                    </div>
+
+                    <div class="course">
+                        <section class="left">
+                            <h2>Bio-technical Applied <span>(food)</span> Engineering</h2>
+                            <h3>Prof. Sam Carrot</h3>
+                            <h4>TTH   2:30-8:00 PM</h4>
+                            <h5>Brek Fast Building</h5>
+                        </section>
+                        <section class="right">
+                            <h4>Units: 16</h4>
+                            <div class="button">
+                                <div class="not"><button>Not Registered</button></div>
+                                <button>Registered</button>
+                            </div>
+                            <h4>Class Capacity: 15  Available Seats: 4  Waitlist: 0</h4>
+                        </section>
+                    </div>
+
+                    <div class="course">
+                        <section class="left">
+                            <h2>Cow <span>(Verb ending in "ing")</span> 101</h2>
+                            <h3>Prof. Mike Heifer</h3>
+                            <h4>TTH   1:10-1:30 PM</h4>
+                            <h5>Big Farm Auditorium</h5>
+                        </section>
+                        <section class="right">
+                            <h4>Units: 1</h4>
+                            <div class="button">
+                                <div class="not"><button>Not Registered</button></div>
+                                <button>Registered</button>
+                            </div>
+                            <h4>Class Capacity: 27  Available Seats: 0  Waitlist: 15</h4>
+                        </section>
+                    </div>
+                
+                    <div class="course">
+                        <section class="left">
+                            <h2>Designing for a <span>(Adjective)</span> World</h2>
+                            <h3>Prof. Glenda Drew</h3>
+                            <h4>MW   6:30-8:50 PM</h4>
+                            <h5>Student Community Center</h5>
+                        </section>
+                        <section class="right">
+                            <h4>Units: 5</h4>
+                            <div class="button">
+                                <div class="not"><button>Not Registered</button></div>
+                                <button>Registered</button>
+                            </div>
+                            <h4>Class Capacity: 30  Available Seats: 0  Waitlist: 52</h4>
+                        </section>
+                    </div>
+
+                    <div class="course">
+                        <section class="left">
+                            <h2>Lab for <span>(Alcoholic Beverage)</span> Consumption</h2>
+                            <h3>Prof. Peter Noir</h3>
+                            <h4>F   10:15-11:50 PM</h4>
+                            <h5>Bull n' Mouth</h5>
+                        </section>
+                        <section class="right">
+                            <h4>Units: 9</h4>
+                            <div class="button">
+                                <div class="not"><button>Not Registered</button></div>
+                                <button>Registered</button>
+                            </div>
+                            <h4>Class Capacity: 379  Available Seats: 16  Waitlist: 0</h4>
+                        </section>
+                    </div>    
+        </div>
 
 
+
+    </main>
 </body>
 </html>
