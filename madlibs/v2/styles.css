@@ -1,144 +1,244 @@
-body{
-    background-color: #F0D883;
-    /* background-color: #FFF8DE;   */
-    /* background-color: #B9DAFF;   */
-    font-family: "Alatsi", serif;;
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+p,
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-family: "Alatsi", serif;
+  background-color: #f4e1a6;
 }
 
-
-#opening-page{
-display: none;    
-}
-#opening-page h1{
-    color: #053e7f;
-    text-align: center;
-    font-size: 4em;
-}
-#opening-page button{
-    color: #053e7f;
-    display: block;
-    margin: auto;
-    padding: .5em;
-    border: .05em solid #053e7f;
-    border-radius: 12%;
-    background-color: #99b2ce7f;
-    font-size: 4em;
-}
-
-
-#form-page{
-    /* display: none; */
-    display: flex;
-    margin: auto;
-    box-sizing: border-box;
+/* .back{
     
+} */
+
+/* Opening Page Styles */
+#opening-page {
+  background-color: #fde9ad;
+  color: #053e7f;
+  text-align: center;
+  font-size: 2em;
+  min-width: 1000px;
+  line-height: 3em;
 }
-#form-page section{
-    flex: 1;
-    padding: 1.5em;
-    width: calc(50%);
-    min-width: 250px;
-    margin: auto;
-}
-#madlib-questions{
-    display: block;
-    background-color: #81B4EE;
-    color: #053e7f;
-    border-radius: 20px;
-    /* this needs to go in middle of page vertically */
-}
-#madlib-questions form{
-    font-size: 1.2em;
-}
-#madlib-questions button{
-    background-color: #6ECF61;
-    border:none;
-    border-radius: 10px;
-    padding: .5em;
-    font-size: 1.5em;
-    /* this also needs to be centered */
-    margin: auto;
-}
-#instructions{
-    font-size: 2em;
-    color: #053e7f;
-}
-form input, form label {
-    display: block;
+#opening-page button {
+  color: #053e7f;
+  display: block;
+  margin: auto;
+  margin-top: .7em;
+  padding: 0.5em;
+  border: 0.05em solid #053e7f;
+  border-radius: 15px;
+  background-color: #52d44e7f;
+  font-size: 3em;
 }
 
-form input {
-    margin-bottom: 1em;
-    width: calc(80%);
-    
-    border-style: none;
-    border-radius: 5px;
+/* -------------------------------------------- */
+
+/* Form Page Styles */
+#form-page {
+  display: flex;
+  margin: auto;
+}
+#instructions {
+  font-size: 2em;
+  color: #053e7f;
+  text-align: left;
+}
+#instructions h3 {
+  line-height: 1em;
+}
+#instructions p {
+  font-size: 1em;
+  text-align: left;
+  padding-top: 0.8em;
+  line-height: 1em;
+}
+#form-page article {
+  flex: 1;
+  padding: 1.5em;
+  width: calc(50%);
+  min-width: 250px;
+  margin: auto;
 }
 
-
-
-.madlib-results{
-    /* display: none;  */
-    display: flex;
-    margin: auto;
-    
+#madlib-questions {
+  display: block;
+  background-color: #81b4ee;
+  color: #053e7f;
+  border-radius: 20px;
+  text-align: left;
+  /* this needs to go in middle of page vertically */
 }
-.top{
-    background-color: #81B4EE;
-    display: flex;
-    /* flex-direction: column; */
-    justify-content:space-between;
-    padding-left: 1em;
-    padding-right: 1em;
-    width: 900px;
-    margin: auto;
+#madlib-questions h2 {
+  font-size: 2.5em;
+  margin-bottom: .5em;
 }
-.top p{
-    border: 1px solid #053e7f;
-    background-color: #F0D883;
-    border-radius: 5px;
-    width: 80px;
-    text-align: center;
-    padding: .7em;
+#madlib-questions form {
+  font-size: 1.5em;
+  gap: 20px;
+}
+#madlib-questions label {
+  font-size: 1em;
+}
+#madlib-questions input {
+  color: #057f38;
+  background-color: #f0d883;
+  border: 0;
+  border-radius: 5px;
+  width: calc(95%);
+  margin-bottom: .8em;
+}
+input > #gotomadlib {
+  /* why isn't this working */
+  color: #057f38;
+  background-color: #057f38;
+  border-radius: 10px;
+  padding: 0.5em;
+  font-size: 3em;
+  margin: auto;
+  /* margin-top: 1em; */
+}
 
+/* ---------------------------------------------- */
+/* madlib results */
+#madlib {
+  /* display: flex; */
+  margin: auto;
 }
-.course{
-  display: flex; 
+#back{
+  background-color: #f0d883;
+}
+
+.top {
+  /* position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%); */
+  display: flex; /* Enables flexbox */
   justify-content: space-between;
+  align-items: center;
+  background-color: #81b4ee;
+  color: #053e7f;
+  text-align: center;
+  padding: 20px;
+  width: 95%;
+  margin: auto;
+  margin-top: .1em;
+  /* padding-left: 1em;
+  padding-right: 1em; */
+  /* z-index: 5;  */
+}
+.top p {
+  display: inline-block;
+  border: 1px solid #053e7f;
+  background-color: #f0d883;
+  border-radius: 5px;
+  width: 80px;
+  text-align: center;
+  padding: 0.5em;
+}
+
+/* Course Sections - Positioned on Top */
+.course {
+  display: flex; /* Enables flexbox */
+  justify-content: space-between;
+  align-items: center;
+  background-color: antiquewhite;
+  width: 95%;
+  margin: auto;
+  margin-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
   border: 1px solid #053e7f;
   border-radius: 10px;
-  background-color: antiquewhite;
-  width: 850px;
-  margin: auto;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-top: 5px;
-
-}
-.left{
- text-align: left; 
- line-height: .3em;
-}
-.right{
-   text-align: right;
-   line-height: .05em;
-   /* line-height: 1px; */
-}
-.right button{
-    background-color: #6ECF61;
-    border: 1px solid #053e7f;
-    border-radius: 5px;
-    padding: .6em; 
-    width: 130px;
-    text-align: center;
-    /* display: inline-block; */
-}
-.not button{
-    background-color: #df1717;
-    
-}
-.button{
-   display: flex; 
-   justify-content: space-between;
 }
 
+.left {
+  text-align: left;
+  
+}
+.left h4, h5{
+  line-height: 0;
+}
+.right {
+  text-align: right;
+  line-height: 0.05em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Button Styling */
+.right button {
+  background-color: #6ecf614f;
+  border: 1px solid #053e7f;
+  border-radius: 5px;
+  padding: 0.6em;
+  width: 130px;
+  text-align: center;
+}
+.not button {
+  background-color: #df1717;
+}
+.button {
+  display: flex;
+  text-align: right;
+  gap: 15px;
+}
+
+/* Main Layout */
+main {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  max-height: 750px;
+  padding: 20px;
+}
+
+/* Page Section Styling */
+main section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+/* Hide & Show Classes */
+.hidden {
+  visibility: hidden;
+  left: -2000px;
+}
+
+/* Background Colors */
+.orange {
+  background-color: #eddfad;
+}
+.gray {
+  background-color: rgb(84, 84, 239);
+}
+/* fill word on madlibs */
+span {
+  color: #057f38;
+  font-style: italic;
+}
