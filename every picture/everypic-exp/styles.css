@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(186, 215, 118);
+}
+#wef {
+    position: absolute;
+    top: 85px;
+    left: 110px; 
+    z-index: 1; 
+    width: 730px;
+    margin: auto;
+}
+#border{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;  
+    margin: auto; 
+}
