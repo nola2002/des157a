@@ -1,0 +1,32 @@
+body{
+    background-color: antiquewhite;
+}
+h1{
+    text-align: center;
+    font-family: "Sorts Mill Goudy", serif;
+    color: #7844d3;
+}
+div{
+    display: flex;
+    margin: 1em;
+}
+p{
+    padding: 2em;
+    width: calc(45%);
+    color: #4459d3;  
+}
+div img{
+    height: calc(40%);
+}
+#sketch2{
+    width: calc(60%);
+    
+}
+a{
+    font-family: "Sorts Mill Goudy", serif;
+    display: block;
+    text-decoration-line: none;
+    padding: 1em;
+    font-size: 1.5em;
+    color: #4459d3; 
+}
