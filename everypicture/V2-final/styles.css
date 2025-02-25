@@ -1,9 +1,23 @@
 body{
-    /* background-color: rgb(255, 234, 170); */
+    background-color: rgb(255, 234, 170);
+    font-family: "Nunito", serif;
 }
 #map{
     position: absolute;
     top: 0;
     left: 0;
     /* width: ; */
+}
+.space-pic{
+    width: calc(25%);
+}
+p{
+    /* font */
+    color: rgb(32, 2, 31);
+}
+h2{
+    color: rgb(32, 2, 31);   
+}
+#image-map{
+    color: rgba(0, 255, 255, 0.342);
 }
