@@ -3,12 +3,11 @@ body{
     font-family: "Nunito", serif;
 }
 .space-pic{
-    width: calc(90%);
+    width: calc(95%);
     margin: auto;
     display: block;
-}
-#staff-dome{
-    padding: 2px;
+    border-radius: 5px;
+
 }
 p{
     color: rgb(32, 2, 31);
@@ -16,7 +15,8 @@ p{
 h2{
     color: rgb(32, 2, 31); 
     font-size: 17px;
-    line-height: 1;  
+    line-height: 1; 
+    margin-bottom: 0; 
 }
 /* #image-map :hover{
     background-color: rgba(176, 240, 240, 0.934);
@@ -29,10 +29,10 @@ h2{
 /* pop up info */
 #overlay article{
     position: absolute;
-    top: 275px;
-    left: 850px;
+    top: 290px;
+    left: 853px;
     width:250px;
-    /* height: 80vh; */
+    /* height: 600px; */
     padding: 7px;
     box-sizing: border-box;
     /* background-color: #ffffff9c; */
@@ -41,6 +41,7 @@ h2{
 }
 p{
     font-size: 11px;
+    margin-top: 5px;
 }
 .hidden {
     visibility: hidden;
