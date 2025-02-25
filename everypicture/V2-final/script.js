@@ -1,8 +1,10 @@
 (function(){
     'use strict';
     console.log('reading js');
+
     document.querySelector('.open').addEventListener('click', function(event){ 
         event.preventDefault();
+        document.querySelector ('#overlay').className = 'showing';
         document.querySelector ('#overlay').className = 'showing';
     });
     document.querySelector('.close').addEventListener('click', function(event){  
