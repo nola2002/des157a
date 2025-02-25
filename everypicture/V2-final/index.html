@@ -13,28 +13,33 @@
 </head>
 <body>
 
-<img src="images/wefmap.jpg" alt="Map of the whole earth Festival" usemap="#image-map">
+<img src="images/wefmap.jpg" alt="Map of the whole earth Festival" usemap="#image-map" id="map">
 
 <map name="image-map">
-    <area target="" alt="" title="" href="#may" coords="549,33,552,11,569,8,593,11,610,5,623,12,639,10,660,6,670,8,683,9,696,10,711,10,729,8,737,12,741,24,741,34,741,44,740,59,736,65,727,68,713,68,700,69,687,68,669,68,661,68,645,67,633,67,613,68,599,68,580,68,562,68,552,63,547,51" shape="poly">
-    <area target="" alt="" title="" href="#staff-dome" coords="611,163,620,149,630,137,648,125,666,121,680,126,690,136,697,149,704,171,703,186,705,196,683,198,659,196,632,192,612,182,602,177" shape="poly">
-    <area target="" alt="" title="" href="#stages" coords="150,201,179,184,212,174,244,174,269,181,287,190,303,205,312,233,308,219,312,246,308,260,279,281,247,290,215,290,197,280,182,264,166,245,151,226,151,213,164,190" shape="poly">
-    <area target="" alt="" title="" href="#stages" coords="549,531,553,515,567,511,586,510,609,509,629,508,649,505,664,500,678,501,690,508,692,524,699,545,699,562,698,578,695,590,690,603,681,614,670,619,658,619,641,621,623,622,607,622,594,625,579,628,572,623,564,615,558,605,551,594,551,572,550,547" shape="poly">
-    <area target="" alt="" title="" href="#education" coords="185,584,201,571,231,571,252,582,258,598,264,613,267,628,273,649,274,669,256,675,232,676,198,672,182,662,171,650,167,636,174,611" shape="poly">
-    <area target="" alt="" title="" href="#kids" coords="179,492,191,481,203,472,218,463,233,460,249,464,261,470,273,475,283,488,292,501,298,522,302,540,286,551,259,554,228,555,207,551,187,542,181,529,175,508" shape="poly">
-    <area target="" alt="" title="" href="#art" coords="195,356,203,340,216,335,234,333,256,335,271,341,279,352,285,368,285,386,280,401,266,419,246,434,223,441,213,430,200,410,191,388,191,367" shape="poly">
-    <area target="" alt="" title="" href="#compost" coords="520,711,548,703,572,702,596,702,622,702,645,698,672,691,694,691,719,690,734,685,761,680,783,681,800,687,807,702,813,716,813,735,811,744,808,755,804,762,789,769,770,769,748,769,729,770,697,771,661,770,639,770,626,770,617,770,601,771,583,771,562,770,542,770,527,771,515,763,516,740,518,725" shape="poly">
-    <area target="" alt="" title="" href="#food" coords="721,298,729,313,731,321,723,328,711,333,703,340,703,351,704,361,707,376,709,387,717,393,730,395,742,400,740,409,736,421,728,426,713,421,698,415,691,402,685,383,682,365,682,352,683,329,696,316,707,306" shape="poly">
-    <area target="" alt="" title="" href="#crafts" coords="422,120,421,140,423,156,425,171,427,189,429,209,429,221,431,234,434,250,436,274,440,295,440,314,442,333,445,347,447,359,464,361,466,342,462,314,461,288,457,265,454,243,451,226,448,209,448,192,447,167,443,152,444,142,456,141,472,138,487,137,507,135,524,131,544,127,569,124,596,119,617,118,637,112,657,112,672,111,689,111,707,110,709,122,710,135,710,151,714,159,714,174,714,190,717,206,720,222,720,235,723,258,727,281,728,298,733,315,749,313,748,290,746,270,743,257,742,232,738,212,736,197,732,165,730,147,729,128,727,111,727,96,722,78,693,85,670,90,650,91,625,92,601,96,575,102,554,103,535,105,514,108,490,110,470,112,446,118" shape="poly">
+    <area target="" alt="staff-dome" title="" href="#staff-dome" coords="505,135,512,122,521,114,530,107,540,103,548,101,557,100,566,103,574,106,579,115,584,123,588,132,588,143,588,153,588,165,575,169,554,168,537,164,520,161,505,152,499,144" shape="poly" class="open">
+    <area target="" alt="dates may 9-11" title="" href="#may" coords="454,18,461,8,474,8,485,8,500,8,522,8,531,8,544,7,558,7,580,6,599,6,609,6,615,14,615,26,615,38,615,48,611,59,600,59,588,58,568,58,547,56,525,56,496,55,476,54,461,52,454,42" shape="poly">
+    <area target="" alt="food booths" title="" href="#food" coords="600,252,608,267,601,274,591,280,583,288,584,298,586,308,587,322,591,330,598,332,607,332,614,337,614,349,606,355,590,349,575,339,572,319,568,299,568,284,573,271,585,262" shape="poly">
+    <area target="" alt="compost and recycle" title="" href="#compost" coords="429,589,448,587,470,587,490,586,512,585,530,583,551,579,573,578,588,578,606,573,627,567,649,566,664,572,668,581,669,590,672,600,674,612,674,622,673,629,664,634,653,640,638,642,620,641,590,642,558,641,530,639,500,640,465,642,438,641,423,636,423,622,424,605" shape="poly">
+    <area target="" alt="crafts booths" title="" href="#crafts" coords="372,301,386,301,388,283,384,258,381,230,378,197,374,171,374,140,370,119,388,115,418,115,439,110,459,108,491,100,520,97,537,96,555,94,577,92,587,90,590,110,590,125,595,145,594,166,597,184,596,205,597,221,603,243,609,261,623,261,622,238,619,216,616,191,613,159,609,134,607,105,604,87,601,70,581,70,559,73,536,77,508,79,481,81,456,84,431,88,406,91,386,95,364,99,346,102,351,122,351,140,354,161,357,176,359,196,359,213,362,236,364,258,365,282" shape="poly">
+    <area target="" alt="quad and cedar stages" title="" href="#stages" coords="452,434,463,424,477,424,499,422,520,418,535,418,553,414,567,414,577,420,579,436,581,450,582,462,582,474,583,485,583,496,575,505,561,513,533,516,503,518,481,519,472,517,463,498,458,480,454,455" shape="poly">
+    <area target="" alt="quad and cedar stages" title="" href="#stages" coords="129,159,143,151,174,145,209,143,232,147,252,161,258,174,264,190,262,205,245,226,218,245,198,245,178,245,162,237,146,218,133,199,123,180" shape="poly">
+    <area target="" alt="education and Experiential space" title="" href="#education" coords="137,532,144,541,149,552,161,557,172,560,200,565,220,562,230,551,228,529,220,510,213,496,202,485,187,475,171,477,152,484,141,501,134,515,136,524" shape="poly">
+    <area target="" alt="education and Experiential space" title="" href="#education" coords="222,374,230,361,240,348,252,332,273,322,292,323,307,332,319,346,326,359,330,372,320,379,301,387,282,394,267,393,248,393,233,390,223,383" shape="poly">
+    <area target="" alt="art space" title="" href="#art" coords="159,308,163,291,173,280,188,278,201,280,213,283,221,293,228,300,236,307,236,320,232,329,223,343,208,358,189,363,177,349,165,326" shape="poly">
+    <area target="" alt="kids space" title="" href="#kids" coords="148,435,150,413,157,399,168,391,189,382,206,384,224,395,238,407,244,421,251,450,239,463,211,468,186,468,161,460,153,448" shape="poly">
 </map>
 
+
+<section id="overlay" class="hidden">
     <article id="staff-dome">
-        <h2>Nonviolence and Chaos Control</h2>
         <img src="images/staff-dome.jpg" alt="staff-dome" class="space-pic">
+        <h2>Nonviolence & Chaos Control</h2>
         <p>This festival wouldn’t be what it is without all of the awesome people that work tirelessly to make this event happen! All the hands that keep this festival moving attend a Nonviolence meeting.
         One of the many things that make this festival special is the philosophy of nonviolence. We learn, practice, and use the art of active listening and respect to resolve disagreements in a manner that ends well for all parties. Whole Earth rejects the dominant mindset in American culture, that an end to contention results in a victor and vanquished. Nonviolent conflict resolution is a fun and useful practice to not only run a festival but also live life. 
         </p>
+        <button class="close">close</button>
     </article>
+</section>    
 
     <article id="may">
         <h2>Love your Mother</h2>
@@ -55,19 +60,19 @@
     </article>
 
     <article id="crafts">
-        <h2>Handmade is just better</h2>
+        <h2>Handmade is better</h2>
         <img src="images/crafts.jpg" alt="craft vendor" class="space-pic">
         <p>We have around 130 craft booths lining the quad during the festival. When you're not dancing to the music or enjoying a vegan corn dog, take a walk around and check out all the vendors selling their handmade wares. There are a range of artisan products, tie-dye, ceramics, jewelry, natural fiber clothing, and so so so much more!</p>
     </article>
 
     <article id="stages">
-        <h2>Music and Groove</h2>
+        <h2>Music & Groove</h2>
         <img src="images/stages.jpg" alt="dancing" class="space-pic">
         <p>We have 2 stages on the quad during the festival, Quad and Cedar stage. Both provide ample entertainment for festival goers throughout the day and into the night. Enjoy a range of musical performances, dance groups, and speakers, check out the schedules in the program to see the exact times.</p>
     </article>
 
     <article id="education">
-        <h2>Experiential and Education Spaces</h2>
+        <h2>Experiential & Education</h2>
         <img src="images/education.jpg" alt="Experiential dome" class="space-pic">
         <p>The Whole Earth Festival is more than just skipping around and dancing. We also provide spaces to experience, educate, and grow. The experiential dome is an area where people can enjoy a range of events; yoga, open mics, meditation, chickens!, poetry, and so much more. Education has booths and speakers throughout the day. Check out environmental groups, identity based groups, and listen to professors speak.</p>
     </article>
