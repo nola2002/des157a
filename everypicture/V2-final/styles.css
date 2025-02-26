@@ -21,13 +21,10 @@ h2{
 /* #image-map :hover{
     background-color: rgba(176, 240, 240, 0.934);
 } */
-#map{
-    background-color: aquamarine;
-}
 
 
 /* pop up info */
-#overlay article{
+section article{
     position: absolute;
     top: 290px;
     left: 853px;
