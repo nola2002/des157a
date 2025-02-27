@@ -34,12 +34,26 @@ section article{
     box-sizing: border-box;
     /* background-color: #ffffff9c; */
     transform: translate(-50%, -50%);
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 p{
     font-size: 11px;
     margin-top: 5px;
 }
+
+.hotspot {
+    position: absolute;
+    border-radius: 50%;
+    background-color: purple;
+}
+
+#hotspot1 {
+    top: 100px;
+    left: 500px;
+    width: 100px;
+    height: 100px;
+}
+
 .hidden {
     visibility: hidden;
     opacity: 0;
@@ -47,4 +61,9 @@ p{
 .showing {
     visibility: visible;
     opacity: 1;
+}
+
+.showingHotspot{
+    visibility: visible;
+    opacity: .3;
 }
