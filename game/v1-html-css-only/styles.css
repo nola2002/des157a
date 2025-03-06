@@ -1,0 +1,48 @@
+body{
+    background-color: antiquewhite;
+}
+h1{
+    text-align: center;
+    font-family: "Sorts Mill Goudy", serif;
+    color: #7844d3;
+}
+
+a{
+    font-family: "Sorts Mill Goudy", serif;
+    display: block;
+    text-align: center;
+    text-decoration-line: none;
+}
+#shape1{
+    /* z-index: -1; */
+    display: block;
+    margin: auto;
+    animation: spin 30s infinite;
+    animation-delay: 0s;
+    /* animation-duration: 30s; */
+    animation-timing-function: linear;
+    animation-direction: normal;
+} 
+div{
+    text-align: center;
+}
+button{
+    text-align: center;
+    display: block;
+    margin: auto;
+    padding: 5px;
+    /* make them side by side */
+}
+
+@keyframes spin{
+    0% {transform: rotate(0deg);}
+
+    25% {transform: rotate(90deg);}
+
+    50% {transform: rotate(180deg);}
+
+    75% {transform:rotate(270deg);}
+
+    100% {transform: rotate(360deg);}
+  }
+
