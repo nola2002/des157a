@@ -13,9 +13,6 @@ a{
     text-align: center;
     text-decoration-line: none;
 }
-
-
-
 div{
     text-align: center;
 }
@@ -38,7 +35,6 @@ button{
     transform-origin: center; */
 } 
 
-
 /* @keyframes rotate{
     0% {transform: rotate(0deg);}
 
@@ -59,6 +55,14 @@ button{
     animation: spin 30s linear infinite;
     transform-origin: center;
 }
+
+
+circle:hover {
+    /* why is this only working on the first 3 circles so weird */
+    r: 45;
+    transition: .5s ease-in-out;
+}
+
 
 @keyframes spin {
     0% {
