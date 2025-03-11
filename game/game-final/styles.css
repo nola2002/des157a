@@ -1,14 +1,13 @@
 body{
-    background-color: antiquewhite;
-}
-h1{
-    text-align: center;
+    /* background-color: antiquewhite; */
     font-family: "Sorts Mill Goudy", serif;
-    color: #7844d3;
+}
+h1,h3{
+    text-align: center;
 }
 
+
 a{
-    font-family: "Sorts Mill Goudy", serif;
     display: block;
     text-align: center;
     text-decoration-line: none;
@@ -20,32 +19,23 @@ button{
     text-align: center;
     display: block;
     margin: auto;
-    padding: 5px;
-    /* make them side by side */
+    padding: 8px;
+    background-color: white;
+    border-radius: 5px;
+    width: 15%;
 }
 
 #shape1{
-    /* text-align: center; */
+    scale: .3;
+    text-align: center;
     /* z-index: -1; */
     /* display: block; */
     /* margin: auto; */
-    /* animation: rotate 30s infinite;
+    /* animation: spin 30s infinite;
     animation-delay: 0s;
     animation-timing-function: linear;
     transform-origin: center; */
 } 
-
-/* @keyframes rotate{
-    0% {transform: rotate(0deg);}
-
-    25% {transform: rotate(90deg);}
-
-    50% {transform: rotate(180deg);}
-
-    75% {transform:rotate(270deg);}
-
-    100% {transform: rotate(360deg);}
-  } */
 
 #rotate {
     display: block;
@@ -53,7 +43,7 @@ button{
     justify-content: center;
     align-items: center;
     animation: spin 30s linear infinite;
-    transform-origin: center;
+    /* transform-origin: center; */
 }
 
 
