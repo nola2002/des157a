@@ -7,6 +7,9 @@
     const score = document.querySelector('#score span');
     const submit = document.querySelector('#submit');
     const newGame = document.querySelector('button');
+    const rightSound = new Audio('sounds/right.mp3');
+    const wrongSound = new Audio('sounds/wrong.mp3');
+
 
     let selectedColor = '';
     let shownColor = '';
@@ -78,8 +81,10 @@
             return;
         } if (selectedCircleIndex === randomCircle) {
             scoreNum += 1; 
+            rightSound.play();
         } else {
             scoreNum -= 2; 
+            wrongSound.play();
         }
         // shows users points
         score.textContent = scoreNum;
