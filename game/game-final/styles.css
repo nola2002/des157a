@@ -42,19 +42,18 @@ button{
 
 
 
-/* #rotate {
+#rotate {
     display: block;
     margin: auto;
     justify-content: center;
     align-items: center;
     animation: spin 30s linear infinite;
-    /* transform-origin: center; 
-} */
+    /* transform-origin: center;  */
+}
 
 
 circle:hover {
-    /* why is this only working on the first 3 circles so weird */
-    r: 45;
+    r: 55;
     transition: .3s ease-in-out;
 }
 
@@ -67,5 +66,3 @@ circle:hover {
         transform: rotate(360deg);
     }
 }
-
-

@@ -63,7 +63,7 @@
     
             // add outline only to the circle that got clicked
             circle.style.stroke = "black";
-            circle.style.strokeWidth = "2px";
+            circle.style.strokeWidth = "3px";
             
             selectedCircleIndex = index; 
         });
@@ -106,6 +106,7 @@
         });
     }
     
+    //new game/refresh 
     newGame.addEventListener('click', function(){
         scoreNum = 0;  
         score.textContent = scoreNum;
