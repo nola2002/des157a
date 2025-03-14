@@ -2,20 +2,31 @@ body{
     /* background-color: antiquewhite; */
     font-family: "Sorts Mill Goudy", serif;
 }
-h1,h3{
+h1{
+    font-size: 2.5em;
     text-align: center;
+}
+h3{
+    text-align: center;
+    font-size: 1.6em;
 }
 
 
 a{
+    color: black;
     display: block;
     text-align: center;
     text-decoration-line: none;
+    position: absolute;
+    /* top: 1; */
+    padding-left: 1em;
 }
 div{
+    padding-top: 2em;
     text-align: center;
 }
 button{
+    font-size: 1.2em;
     text-align: center;
     display: block;
     margin: auto;
@@ -27,26 +38,19 @@ button{
 #submit{
     margin-top: 2em;
 }
-
 #shape1{
-    scale: .5;
+    scale: 1.1;
     text-align: center;
-    /* z-index: -1; */
-    /* display: block; */
-    /* margin: auto; */
-    /* animation: spin 30s infinite;
-    animation-delay: 0s;
-    animation-timing-function: linear;
-    transform-origin: center; */
+    
 } 
-
-
-
 #rotate {
-    display: block;
-    margin: auto;
+    /* from glenda: commented out the display and associated properties and just made the height and width the same as the svg dimensions which I got from Illustrator */
+    /* display: block;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    margin: auto;
+    width: 212px;
+    height: 206px;
     animation: spin 30s linear infinite;
     /* transform-origin: center;  */
 }
@@ -54,6 +58,10 @@ button{
 
 circle:hover {
     r: 55;
+    transition: .3s ease-in-out;
+}
+button:hover{
+    scale: 1.1;
     transition: .3s ease-in-out;
 }
 
