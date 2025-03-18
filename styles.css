@@ -22,8 +22,8 @@ h1, h2, h3, p, ul, ol{
 /* custom cursor */
 
 
-
 body{
+   min-width: 1080px;
    /* fit height problem */
    /* min-height: 800px; */
    /* max-height: 700px;
@@ -71,50 +71,66 @@ align-items: center;
  text-align: left;
 }
 #banner img{
-
-
  width: calc(24%);
  max-width: 245px;
  /* padding: 10px; */
 }
 
-
 /* banner word rotation */
 #banner header #fillword h1{
-color: #c94242;
-font-size: 1.5em;
+/* color: #c94242; */
 text-align: center;
 padding: 10px;
-/* height: 42px; */
-/* width: 200px;  */
-border: 1.5px solid rgb(64, 13, 233);
-border-radius: 10px;
-position: relative;
-top: 20px;
-/* left: 20px; */
+font-weight: 500;
+font-size: 1.8em;
+font-style: normal;
+
 }
-
-
+/* box words are falling into */
+#box{
+   border: 1.5px solid #276144;
+   border-radius: 10px;
+   height: 50px;
+   width: 170px;
+   position: relative;
+   top: 16.5px;
+   right: 150px;
+   overflow: hidden;
+}
 #fillword {
- position: relative;
+   position: relative;
+   height: 50px;
+   overflow: hidden;
+   text-align: center;
+   display: flex;
+   justify-content: center; 
+   align-items: center;
 }
-
-
 #wordone {
- position: relative;
- top: -30px;
- opacity: 1;
- animation: moveWordone 7.5s ease forwards;
+   color: #f1b316;
+   position: absolute;
+   top: 50px;
+   opacity: 0;
+   animation: rotateWords 12s infinite;
+   text-align: center;
 }
+
 #wordtwo {
- position: relative;
- top: -90px;
- opacity: 1;
- animation: moveWordtwo 4.5s ease forwards;
+   color: #1d50b7;
+   position: absolute;
+   top: 50px;
+   opacity: 0;
+   animation: rotateWords 12s infinite;
+   animation-delay: 4.5s; 
 }
-
-
-
+#wordthree {
+   color: #f16316;
+   position: absolute;
+   top: 50px;
+   opacity: 0;
+   animation: rotateWords 12s infinite;
+   animation-delay: 8.5s; 
+}
 
 /* boxes */
 main{
@@ -174,8 +190,6 @@ background-color: #f16316;
 }
 
 
-
-
 /* nav options italicize on hover */
 .submenu li {
    font-style: normal;
@@ -188,15 +202,12 @@ background-color: #f16316;
    font-style: italic;
 }
 
-
 .submenu li a{
  color: antiquewhite;
  font-family: "Sorts Mill Goudy", serif;
  font-weight: 400;
  font-size: 1.1em;
 }
-
-
 
 
 /* sliding footer message */
@@ -219,7 +230,6 @@ footer {
    justify-content: center;
    width: 100%;
    height: 55px;
-  
  }
  footer #email a{
    color: rgb(250, 236, 221);
@@ -227,8 +237,6 @@ footer {
    text-align: center;
    font-size: 1.5em;
    padding-top: 12px ;
-
-
  }
  footer #message {
    display: flex;
@@ -258,6 +266,8 @@ footer {
      transform: translateX(-100%);
    }
  }
+
+
  /* footer flips to show email on hover*/
 footer:hover #message {
  display: none;
@@ -271,42 +281,21 @@ footer:hover #email{
 
 
 
-
 /* word rotaion animation */
-@keyframes moveWordone {
- 0% {
-     top: -30px;
-     opacity: 0;
- }
- 40% {
-     top: 0;
-     opacity: 1;
- }
- 60% {
-     top: 0;
-     opacity: 1;
- }
- 100% {
-     top: 60px;
-     opacity: 0;
- }
+@keyframes rotateWords {
+   0% { 
+      top: 50px; opacity: 0; 
+   }
+   10% { 
+      top: 0; opacity: 1; 
+   }  
+   30% { 
+      top: 0; opacity: 1; 
+   }  
+   40% { 
+      top: -50px; opacity: 0; 
+   } 
+   100% { 
+      top: -50px; opacity: 0; 
+   } 
 }
-@keyframes moveWordtwo {
- 0% {
-     top: -90px;
-     opacity: 0;
- }
- 40% {
-     top: 0;
-     opacity: 1;
- }
- 60% {
-     top: 0;
-     opacity: 1;
- }
- 100% {
-     top: 60px;
-     opacity: 0;
- }
-}
-
