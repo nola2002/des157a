@@ -24,12 +24,11 @@ h1, h2, h3, p, ul, ol{
 
 body{
    min-width: 1080px;
-   min-height: 900px;
-   /* fit height problem */
-   /* min-height: 800px; */
-   /* max-height: 700px;
-   min-height: 600px; */
+   
 }
+/* html{
+  max-height: 900px; 
+} */
 main{
  background-color: antiquewhite;
 }
@@ -207,7 +206,7 @@ background-color: #f16316;
  color: antiquewhite;
  font-family: "Sorts Mill Goudy", serif;
  font-weight: 400;
- font-size: 1.1em;
+ font-size: 1.2em;
 }
 
 
@@ -221,8 +220,8 @@ footer {
    text-align: center;
    text-transform: uppercase;
    overflow-x: hidden;
-   position: fixed;
-   bottom: 0;
+   position: sticky;
+   top: 700px;
    padding-top: 4px;
  }
  footer #email{
