@@ -24,6 +24,7 @@ h1, h2, h3, p, ul, ol{
 
 body{
    min-width: 1080px;
+   min-height: 900px;
    /* fit height problem */
    /* min-height: 800px; */
    /* max-height: 700px;
